@@ -8,13 +8,21 @@ import likeIkon from "../../assets/Component 1.svg";
 import classes from './Header.module.css';
 import Search from '../Search/Search';
 
+
 export default function Headers() {
     return (
         <>
-            <header>
-                <div className={classes.firstHeader}>
-                    <div className={classes.movingText}>hello</div>
+            <div className={classes.firstHeader}>
+                <div>
+                    <p className={classes.movingText}>#швидкотазручно</p>
+                    <p className={classes.movingText}>#buy now</p>
+                    <p className={classes.movingText}>#вседлядому</p>
+                    <p className={classes.movingText}>#швидкотазручно</p>
+                    <p className={classes.movingText}>#buy now</p>
+                    <p className={classes.movingText}>#вседлядому</p>
                 </div>
+            </div>
+            <header>
                 <nav className={classes.menu}>
 
                     <div className={classes.leftMenu}>
@@ -39,7 +47,7 @@ export default function Headers() {
                         </div>
                         <div className={classes.logoText}>
                             <img src={UserIcon} alt="Гео" />
-                            <a href="#login"><p>Привіт! Увійдіть В Систему</p></a>
+                            <a href="#login"><p>Привіт! Увійдіть в Систему</p></a>
                         </div>
                         <div className={classes.logoGroup}>
                             <img src={BuyIcon} alt="Гео" />

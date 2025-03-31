@@ -62,5 +62,33 @@ header {
 
 .firstHeader {
     background-color: #839D9A;
+    overflow: hidden;
 }
 
+.firstHeader div{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    animation: running-text 15s linear infinite;
+    width: auto;
+   
+}
+
+
+  
+  .movingText {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+  }
+
+  @keyframes running-text {
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(100%);
+    }
+  }
+  
